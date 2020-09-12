@@ -18,9 +18,9 @@ export function createCustomElementCommand(context: vscode.ExtensionContext) {
     const vmFile = vscode.Uri.parse('untitled:' + path.join(uri.fsPath, `${kebabCase(ceName)}.${language}`));
     vscode.workspace.openTextDocument(vmFile).then(document => {
       const edit = new vscode.WorkspaceEdit();
-      edit.insert(vmFile, new vscode.Position(0, 0), `import { autoinject } from "aurelia-framework";
+      edit.insert(vmFile, new vscode.Position(0, 0), `import { ${language === "ts" ? "autoinject" : "inject"} } from "aurelia-framework";
 
-@autoinject()
+@${language === "ts" ? "autoinject" : "inject"}()
 export class ${pascalCase(ceName)} {
   constructor() {}
 }`);
