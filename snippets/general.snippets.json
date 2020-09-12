@@ -1,0 +1,10 @@
+{
+  "Aurelia import from framework": {
+    "prefix": "au-import-framework",
+    "body": [
+      "import { $0 } from \"aurelia-framework\";"
+    ],
+    "description": "Import something from aurelia-import",
+    "scope": "javascript,typescript"
+  }
+}

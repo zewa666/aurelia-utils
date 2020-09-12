@@ -1,0 +1,12 @@
+{
+  "Create an Aurelia-Store action": {
+    "prefix": "au-store-action",
+    "body": [
+      "export function ${1:myActionName}(state: ${2:State}${3:, foo: string}) {",
+      "  return { ...state, $0};",
+      "}"
+    ],
+    "description": "Create an Aurelia-Store action",
+    "scope": "typescript"
+  }
+}

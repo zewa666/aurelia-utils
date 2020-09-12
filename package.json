@@ -50,7 +50,25 @@
           "when": "explorerResourceIsFolder"
         }
       ]
-    }
+    },
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/store.snippets-ts.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/store.snippets-js.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/general.snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/general.snippets.json"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
